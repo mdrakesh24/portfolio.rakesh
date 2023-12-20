@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    background-color: darkblue;
+    color: white;
+    list-style: none;
+    display: flex;
+}
