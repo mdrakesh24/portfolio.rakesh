@@ -142,6 +142,140 @@ for (let i = 0; i < navigationLinks.length; i++) {
         navigationLinks[i].classList.remove("active");
       }
     }
-
   });
 }
+
+
+//FETCH THE SKILLS FROM JSON FILE
+//***************************************************** */
+
+// Fetch JSON data and generate skills list
+fetch('./js/skills.json')
+.then(response => {
+  if (!response.ok) {
+    throw new Error('Network response was not available ' + response.statusText);
+  }
+  return response.json();
+})
+.then(skills => {
+  //Get the Skills Container
+  const skillsList = document.querySelector('.project-list');
+
+// Iterate over the skills array and create elements
+  skills.forEach(skill => {
+    // Create the skill item
+    const skillItem = document.createElement('li');
+    skillItem.className = 'project-item active';
+
+    // Create the image element
+    const img = document.createElement('img');
+    img.src = skill['img-url'];
+    img.alt = skill.name;
+    img.loading = 'lazy';
+
+    // Create the title element
+    const title = document.createElement('h3');
+    title.className = 'project-title';
+    title.textContent = skill.name;
+
+    // Create the description element
+    const desc = document.createElement('p');
+    desc.className = 'project-category';
+    desc.textContent = skill.desc;
+
+    const anchor = document.createElement('a');
+    anchor.href = '#';
+
+    const fig = document.createElement('figure');
+    fig.className = 'project-img'
+
+    fig.appendChild(img);
+    anchor.appendChild(fig);
+
+    // Append the elements to the skill item
+    skillItem.appendChild(anchor);
+    skillItem.appendChild(title);
+    skillItem.appendChild(desc);
+
+    // Append the skill item to the skills list
+    skillsList.appendChild(skillItem);
+  });
+})
+.catch(error => {
+  console.error('Error fetching the JSON file:', error);
+});
+
+
+//FETCH THE PROJECTS FROM JSON FILE
+//***************************************************** */
+
+fetch('./js/projects.json')
+.then(response => {
+  if (!response.ok) {
+    throw new Error('Network response was not available ' + response.statusText);
+  }
+  return response.json();
+})
+.then(projects => {
+  //Get the Projects Container
+  const projectsList = document.querySelector('.blog-posts-list');
+
+  projects.forEach(project => {
+  // Create the project item
+    const projItem = document.createElement('li');
+    projItem.className = 'blog-post-item';
+
+    const an = document.createElement('a');
+    an.target = '_blank';
+    an.href = project.link;
+
+    const figu = document.createElement('figure');
+    figu.className = 'blog-banner-box';
+
+    // Create the image element
+    const proimg = document.createElement('img');
+    proimg.src = project['img-url'];
+    proimg.alt = project.alt;
+    proimg.loading = 'lazy';
+
+    figu.appendChild(proimg);
+
+    const div1 = document.createElement('div');
+    div1.className = 'blog-content';
+
+    const div2 = document.createElement('div');
+    div2.className = 'blog-meta';
+
+    const para1 = document.createElement('p');
+    para1.className = 'blog-category';
+    para1.textContent = project.tech;
+    div2.appendChild(para1);
+    div1.appendChild(div2);
+
+    // Create the title element
+    const title = document.createElement('h3');
+    title.className = 'h3 blog-item-title';
+    title.textContent = project.title;
+
+    div1.appendChild(title);
+
+    // Create the description element
+    const desc = document.createElement('p');
+    desc.className = 'blog-text';
+    desc.textContent = project.desc;
+
+    div1.appendChild(desc);
+
+    an.appendChild(figu);
+    an.appendChild(div1);
+
+    // Append the elements to the project item
+    projItem.appendChild(an);
+
+    // Append the project item to the projects list
+    projectsList.appendChild(projItem);
+  });
+})
+.catch(error => {
+  console.error('Error fetching the JSON file:', error);
+});

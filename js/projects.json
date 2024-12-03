@@ -1,0 +1,66 @@
+[
+    {
+        "link" : "https://github.com/mdrakesh24/apiconnect.github.io",
+        "img-url": "./projects/apiconnect.JPG",
+        "alt" : "API Connect",
+        "title": "API Interface",
+        "tech" : "Html, Css, Javascript and Django",
+        "desc" : "You can just click and use any API from this website according to your requirement."
+    },
+    {
+        "link" : "https://github.com/mdrakesh24/lets-eat.github.io",
+        "img-url": "./projects/restaurant.JPG",
+        "alt" : "Let's Eat!",
+        "title": "Restaurant Website",
+        "tech" : "Html, Css, Javascript and APIs",
+        "desc" : "Restaurant's Interface to show their products online."
+    },
+    {
+        "link" : "https://github.com/mdrakesh24/primevideo.github.io",
+        "img-url": "./projects/primevideo.JPG",
+        "alt" : "Prime Video",
+        "title": "OTT Platform",
+        "tech" : "Html, Css, Javascript and TMDB API",
+        "desc" : "Clone of OTT Movie streaming websites available now days."
+    },
+    {
+        "link" : "https://github.com/mdrakesh24/portfolio.rakesh",
+        "img-url": "./projects/portfolio.JPG",
+        "alt" : "Personal Portfolio",
+        "title": "Portfolio",
+        "tech" : "Html, Css and Javascript",
+        "desc" : "Personal Portfolio Website to show case my knowledge, skills, projects and experience."
+    },
+    {
+        "link" : "https://github.com/mdrakesh24/AIDesktop-Assistant",
+        "img-url": "./projects/deskai.png",
+        "alt" : "Desktop Assistant",
+        "title": "Desktop Assitant",
+        "tech" : "Python Libraries",
+        "desc" : "Desktop Assistant for doing basic work using a voice command from user, mainly it is an application of Python and it's libraries."
+    },
+    {
+        "link" : "https://github.com/mdrakesh24/WeatherCast",
+        "img-url": "./projects/weather.JPG",
+        "alt" : "WeatherCast",
+        "title": "Weather API",
+        "tech" : "Html, Css, Javascript and Openweather API",
+        "desc" : "This Weather application allows user to search weather of different locations, mostly created using JavaScript and Open Weather API."
+    },
+    {
+      "link" : "https://github.com/mdrakesh24/clickit.github.io",
+      "img-url": "./projects/photo.JPG",
+      "alt" : "ClickIt",
+      "title": "Photography Portfolio",
+      "tech" : "Html, Css, Javascript and Image API",
+      "desc" : "Frontend design of a photographic blog website including multiple pages like home, about, login, signup, gallery etc."
+    },
+    {
+    "link" : "https://github.com/mdrakesh24/openblogs.github.io",
+    "img-url": "./projects/blog.JPG",
+    "alt" : "OpenBlogs",
+    "title": "Blog Website",
+    "tech" : "Html, Css and Javascript",
+    "desc" : "Frontend design of a Blogging website developed using technologies like HTML, CSS and JS"
+    }
+]

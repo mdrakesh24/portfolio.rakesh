@@ -1,0 +1,77 @@
+[
+  {
+    "img-url": "./skills/cpp.png",
+    "name": "C++ Language",
+    "desc": "Programming Language"
+  },
+  {
+    "img-url": "./skills/python.jpeg",
+    "name": "Python",
+    "desc": "Programming Language"
+  },
+  {
+    "img-url": "./skills/java.jpg",
+    "name": "Java",
+    "desc": "Programming Language"
+  },
+  {
+      "img-url": "./skills/c.jpg",
+      "name": "C Programming",
+      "desc": "Programming Language"
+  },
+  {
+      "img-url": "./skills/sql.jpg",
+      "name": "Structured Query Language",
+      "desc": "Database"
+  },
+  {
+      "img-url": "./skills/html.jpg",
+      "name": "Hyper Text Markup Language",
+      "desc": "Frontend"
+  },
+  {
+      "img-url": "./skills/css.jpg",
+      "name": "Cascading Style Sheet",
+      "desc": "Frontend"
+  },
+  {
+      "img-url": "./skills/js.jpg",
+      "name": "JavaScript",
+      "desc": "Web Scripting Language"
+  },
+  {
+    "img-url": "./skills/bs.jpg",
+    "name": "BootStrap",
+    "desc": "Frontend Framework"
+  },
+  {
+    "img-url": "./skills/django.jpg",
+    "name": "Django",
+    "desc": "Backend Framework"
+  },
+  {
+    "img-url": "./skills/git.png",
+    "name": "Git & Github",
+    "desc": "Version Control"
+  },
+  {
+    "img-url": "./skills/mongodb.jpg",
+    "name": "MongoDB",
+    "desc": "Database"
+  },
+  {
+    "img-url": "./skills/solidity.jpeg",
+    "name": "Solidity",
+    "desc": "Blockchain Smart Contract"
+  },
+  {
+      "img-url": "./skills/pyside6.png",
+      "name": "PySide6",
+      "desc": "Framework for Desktop Apps"
+  },
+  {
+      "img-url": "./skills/numpy.jpg",
+      "name": "NumPy",
+      "desc": "Python Library"
+  }
+]
